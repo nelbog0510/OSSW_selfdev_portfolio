@@ -20,19 +20,10 @@
 | 페이지 | 기능 |
 |---|---|
 | `index.html` | 포트폴리오 메인 화면 — 내 프로젝트 목록을 확인하고 추가·수정 |
-| `star.html` | 프로젝트 경험을 **STAR 기법**(상황 Situation · 과제 Task · 행동 Action · 결과 Result)으로 정리 <!-- TODO: star 페이지 기능이 다르면 수정 --> |
+| `star.html` | 프로젝트 경험을 **STAR 기법**(상황 Situation · 과제 Task · 행동 Action · 결과 Result)으로 정리 
 | `export.html` | **목표 직무 선택 → 직무별 색상·디자인 테마 적용 → PPT 파일로 내보내기** |
 
-<!-- TODO: 실제 기능과 다른 부분이 있으면 표 내용 수정 -->
-
 <br>
-
-## 🖼 화면 미리보기
-
-<!-- TODO: 스크린샷을 portfolio/screenshots/ 폴더에 넣고 아래 경로 맞추기 -->
-| 메인 | STAR 정리 | PPT 내보내기 |
-|---|---|---|
-| ![메인](portfolio/screenshots/main.png) | ![STAR](portfolio/screenshots/star.png) | ![내보내기](portfolio/screenshots/export.png) |
 
 <br>
 
@@ -106,9 +97,3 @@ git clone https://github.com/깃허브아이디/레포이름.git
 | `docs:` | 문서 작성·수정 |
 
 <br>
-
-## 👤 담당
-
-| 이름 | 역할 |
-|---|---|
-| 이아름 ([@깃허브아이디](https://github.com/깃허브아이디)) <!-- TODO --> | 포트폴리오 메뉴 기획 및 구현 |
