@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>포트폴리오 만들기 · 포트폴리오</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="css/portfolio.css">
+</head>
+<body class="pf-body">
+  <div id="header"></div>
+
+  <main class="pf-page">
+    <header class="pf-hero">
+      <p class="pf-eyebrow">포트폴리오</p>
+      <h1>포트폴리오 만들기</h1>
+      <p class="pf-lead">정리한 프로젝트로 발표용 슬라이드를 만들어요. 목표 직무에 어울리는 색과 디자인이 자동으로 입혀지고, 파워포인트 파일로 저장해 바로 고칠 수 있어요.</p>
+    </header>
+
+    <nav id="pf-subnav"></nav>
+
+    <div class="pf-export">
+      <aside class="pf-card pf-panel" id="panel" aria-label="포트폴리오 설정"></aside>
+
+      <section class="pf-viewer" aria-label="슬라이드 미리보기">
+        <div class="pf-viewer-bar">
+          <strong id="slide-label" aria-live="polite"></strong>
+          <div>
+            <button type="button" class="pf-btn pf-btn--sm" id="prev" aria-label="이전 슬라이드"><i data-lucide="chevron-left"></i></button>
+            <button type="button" class="pf-btn pf-btn--sm" id="next" aria-label="다음 슬라이드"><i data-lucide="chevron-right"></i></button>
+            <button type="button" class="pf-btn pf-btn--sm" id="present"><i data-lucide="circle-play"></i>발표 모드</button>
+          </div>
+        </div>
+        <div class="pf-main-slide" id="main-slide"><div class="pf-main-scale" id="main-scale"></div></div>
+        <div class="pf-thumbs" id="thumbs" aria-label="슬라이드 목록"></div>
+      </section>
+    </div>
+  </main>
+
+  <script src="../common/storage.js"></script>
+  <script src="../common/header.js"></script>
+  <!-- 목표 직무 이름·필요 역량을 쓰기 위해 팀 직무 데이터 사용 -->
+  <script src="../data/jobs.js"></script>
+  <script src="https://unpkg.com/lucide@1.77.0/dist/umd/lucide.min.js"></script>
+  <!-- .pptx 파일 만들기 -->
+  <script src="https://cdn.jsdelivr.net/npm/pptxgenjs@4.0.1/dist/pptxgen.bundle.js"></script>
+  <!-- PDF 저장 -->
+  <script src="https://cdn.jsdelivr.net/npm/html2pdf.js@0.14.0/dist/html2pdf.bundle.min.js"></script>
+  <script src="js/portfolio-common.js"></script>
+  <script src="js/slides.js"></script>
+  <script src="js/export.js"></script>
+</body>
+</html>
