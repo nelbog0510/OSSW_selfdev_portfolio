@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>프로젝트 묶기 · 포트폴리오</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="css/portfolio.css">
+</head>
+<body class="pf-body">
+  <!-- 공통 헤더: common/header.js가 채워 줍니다 -->
+  <div id="header"></div>
+
+  <main class="pf-page">
+    <header class="pf-hero">
+      <p class="pf-eyebrow">포트폴리오</p>
+      <h1>프로젝트 묶기</h1>
+      <p class="pf-lead">흩어진 기록을 끌어다 하나의 프로젝트로 묶어 보세요. 묶인 기록의 역량 태그가 프로젝트의 대표 역량이 돼요.</p>
+    </header>
+
+    <nav id="pf-subnav"></nav>
+
+    <div class="pf-board">
+      <!-- 왼쪽: 정리 안 된 기록 -->
+      <section class="pf-card pf-pool" aria-labelledby="pool-title">
+        <div class="pf-pool-head">
+          <h2 class="pf-section-title" id="pool-title">정리 안 된 기록 <span class="pf-count" id="pool-count">0</span></h2>
+          <label class="pf-search">
+            <i data-lucide="search"></i>
+            <input type="search" id="pool-search" class="pf-input" placeholder="제목·내용 검색" aria-label="기록 검색">
+          </label>
+          <div class="pf-filter" id="pool-filter" role="group" aria-label="역량 태그로 거르기"></div>
+        </div>
+        <ul class="pf-drop" id="pool-list" data-empty="모든 기록이 프로젝트에 들어갔어요. 빼고 싶은 기록은 여기로 다시 끌어다 놓으세요."></ul>
+      </section>
+
+      <!-- 오른쪽: 프로젝트 칸 -->
+      <section aria-labelledby="projects-title">
+        <div class="pf-projects-head">
+          <h2 class="pf-section-title" id="projects-title">내 프로젝트 <span class="pf-count" id="project-count">0</span></h2>
+          <button type="button" class="pf-btn pf-btn--primary" id="add-project"><i data-lucide="plus"></i>새 프로젝트</button>
+        </div>
+        <div class="pf-project-grid" id="project-list"></div>
+      </section>
+    </div>
+  </main>
+
+  <!-- 팀 공통 파일 (합치기 전에는 없어도 단독으로 동작합니다) -->
+  <script src="../common/storage.js"></script>
+  <script src="../common/header.js"></script>
+  <!-- 오픈소스 -->
+  <script src="https://unpkg.com/lucide@1.77.0/dist/umd/lucide.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.7/Sortable.min.js"></script>
+  <!-- 포트폴리오 -->
+  <script src="js/portfolio-common.js"></script>
+  <script src="js/projects.js"></script>
+</body>
+</html>
