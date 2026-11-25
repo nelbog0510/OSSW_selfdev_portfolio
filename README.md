@@ -51,7 +51,7 @@ portfolio/
 |---|---|---|
 | 언어 | HTML / CSS / JavaScript | 별도 설치 없이 브라우저에서 바로 실행 |
 | 폰트 | [Pretendard](https://github.com/orioncactus/pretendard) (SIL OFL 1.1) | 팀 공통 폰트, 한글·영문 가독성이 좋음 |
-| 라이브러리 | <!-- TODO: export.js에서 쓰는 PPT 생성 라이브러리 이름 (예: PptxGenJS) --> | 브라우저에서 바로 .pptx 파일 생성 |
+| 라이브러리 | PptxGenJS | 브라우저에서 바로 .pptx 파일 생성 |
 
 <br>
 
@@ -75,22 +75,3 @@ git clone https://github.com/깃허브아이디/레포이름.git
 
 <br>
 
-## 🎨 디자인 규칙 (팀 공통)
-
-- 폰트: **Pretendard**
-- 색상: **흰 바탕 + 파란색 포인트**
-- 팀원 5명이 각자 메뉴를 개발한 뒤 하나의 사이트로 합치기 때문에, 폰트와 색상을 통일했습니다.
-
-<br>
-
-## 📌 커밋 규칙
-
-| 접두어 | 의미 |
-|---|---|
-| `feat:` | 새 기능 추가 |
-| `fix:` | 버그 수정 |
-| `style:` | 디자인·CSS 변경 |
-| `refactor:` | 기능 변화 없이 코드 정리 |
-| `docs:` | 문서 작성·수정 |
-
-<br>
