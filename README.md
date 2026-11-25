@@ -57,10 +57,7 @@ portfolio/
 
 ## ▶️ 실행 방법
 
-### 방법 1. 웹에서 바로 실행
-👉 **[포트폴리오 메이커 바로가기](https://깃허브아이디.github.io/레포이름/portfolio/)** <!-- TODO: GitHub Pages 주소로 교체 -->
-
-### 방법 2. 내 컴퓨터에서 실행
+### 방법 1. 내 컴퓨터에서 실행
 ```bash
 git clone https://github.com/깃허브아이디/레포이름.git
 ```
